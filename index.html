@@ -1,29 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="normalize.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-</head>
-<body>
+    <link href="normalize.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
     <main>
-    <h1>Forms playground</h1>
-    <form class="form">
+      <h1>Forms playground</h1>
+      <form class="form">
         <p>
-        <label for= "firstName">Your real name</label>
-        <input class="form__item" type="text" value="Szoszana" placeholder="type your first name" id="firstName" name="firstName">
+          <label for="firstName">Your first name</label>
+          <input
+            class="form__item"
+            type="text"
+            value="Szoszana"
+            placeholder="type your first name"
+            id="firstName"
+            name="firstName"
+          />
         </p>
         <p>
-        <label>Marta's real name
-        <input class="form__item" id="lastName" placeholder="type your last name" name="lasttName"></p>
-        <label>Filip's real name
-            <input class="form__item" id="birdSign" placeholder="your boyfirend's bird sign" name="birdSign"></p>
-        </label>
-    </label>
-    </form>
+          <label>Your last name</label>
+          <input
+            class="form__item"
+            id="lastName"
+            placeholder="type your last name"
+            name="lasttName"
+          />
+        </p>
+
+        <fieldset>
+          <legend>Address</legend>
+          <p>
+            <label>Street name</label>
+            <input
+              class="form__item"
+              id="streetName"
+              placeholder="type street name"
+              name="streetName"
+            />
+          </p>
+          <p>
+            <label>City</label>
+            <input
+              class="form__item"
+              id="city"
+              placeholder="type city"
+              name="City"
+            />
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Favourite ice-cream flavour</legend>
+          <p>
+            <label
+              ><input
+                name="iceCream"
+                type="radio"
+                checked
+                value="chocolate"
+              />chocolate</label
+            >
+          </p>
+
+          <p>
+            <label>
+              <input
+                name="iceCream"
+                type="radio"
+                value="strawberry"
+              />strawberry</label
+            >
+          </p>
+          <p>
+            <label>
+              <input name="iceCream" type="radio" value="moccha" />moccha
+            </label>
+          </p>
+        </fieldset>
+        <p>
+          <label>
+            <input name="agreement" type="checkbox" value="agree" />I agree
+          </label>
+        </p>
+        <p>
+          <label>Your favourite number</label>
+          <input name="favouriteNumber"
+          type="number"            
+          class="form__item"
+          id="number"
+          placeholder="your favourite number"
+           />   
+        </p>
+        <p>
+            <label>Your phone number</label>
+            <input name="phoneNumber"
+            type="tel"            
+            class="form__item"
+            id="phoneNumber"
+            placeholder="your phone number" />   
+          </p>
+          <p>
+            <label>Your e-mail</label>
+            <input name="email"
+            required
+            type="email"            
+            class="form__item"
+            id="email"
+            placeholder="your e-mail"
+            />   
+          </p>
+          <p>
+            <label>Your salary range</label>
+            <input name="range"
+            class="form__item range--js"
+            type="range"            
+            id="range"
+            min="2000"
+            max="5000"
+            step="1000" />   
+          </p>
+          <p>
+              <label>Password</label>
+              <input name="password"
+              class="form__item"
+              type="password"
+              id="password"
+              placeholder="please enter your password"/>
+          </p>
+          <p>
+            <label>Upload your resume</label>
+            <input name="resume"
+            class="form__item"
+            type="file"
+            id="resume"
+           />
+
+            <p>
+                <label>Select your favourite band</label>
+                <select name="band" id="band"
+                    class="form__item-select">
+                    <option value="band-1">Metallica</option>
+                    <option value="band-2">Jessica</option>
+                    <option value="band-3">Happy Unicorns</option>
+                </select>
+            </p>
+            <p>
+                    <label>Your story</label>
+                    <textarea id="yourStory" name="yourStory" class="form__item-select"></textarea>
+                </p>
+                <p>
+                    <label>Send</label>
+                    <input name="submitForm"
+                    class="form__item-select"
+                    type="submit"
+                    value="Send">
+                </p>
+            
+      </form>
     </main>
-    
-</body>
+  </body>
 </html>
